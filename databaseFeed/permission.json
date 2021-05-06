@@ -1,0 +1,21 @@
+{
+    "permissions": [
+        {
+            "permission": "LIST_USER",
+            "label": "All Users"
+        },
+        {
+            "permission": "EDIT_USER",
+            "label": "Update User"
+        },
+        {
+            "permission": "DELETE_USER",
+            "label": "Remove User"
+        },
+        {
+            "permission": "VIEW_USER",
+            "label": "View Profile"
+        }
+    ]
+    
+}

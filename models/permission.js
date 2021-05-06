@@ -11,8 +11,15 @@ module.exports = function (sequelize, DataTypes) {
       name: {
         type: DataTypes.STRING,
         allowNull : false
+      },
+      label: {
+        type: DataTypes.STRING,
+        allowNull : false
       }
     },
   )
+  permission.associate = function (models){
+    permission.hasMany(models.rolesPermission, { foreignKey: 'permission_id' });
+  }
   return permission;
 }
